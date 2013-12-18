@@ -30,6 +30,8 @@ A basic example to show the usage of this function:
 	        $('#max').change( function() { oTable.fnDraw(); } );
     	});
     
-    '#min' and '#max' represent the two date-range pickers which will create the date-range to filter the table on.
+
+
+'#min' and '#max' represent the two date-range pickers which will create the date-range to filter the table on.
     
-    By adding "change" event listeners to the two date-range pickers we are redrawing the datatable to show the filtered results everytime the dates in the date-ranger pickes change 
+By adding "change" event listeners to the two date-range pickers we are redrawing the datatable to show the filtered results everytime the dates in the date-ranger pickes change 
