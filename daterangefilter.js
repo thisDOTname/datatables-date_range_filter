@@ -14,7 +14,7 @@
 					var arr_max = iMax_temp.split("/");
 					var arr_date = aData[2].split("/");
           
-          var iMin = new Date(arr_min[2], arr_min[0], arr_min[1], 0, 0, 0, 0)
+          				var iMin = new Date(arr_min[2], arr_min[0], arr_min[1], 0, 0, 0, 0)
 					var iMax = new Date(arr_max[2], arr_max[0], arr_max[1], 0, 0, 0, 0)
 					var iDate = new Date(arr_date[2], arr_date[0], arr_date[1], 0, 0, 0, 0)
 					
