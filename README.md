@@ -13,22 +13,22 @@ Usage:
 A basic example to show the usage of this function:
 
 
-$(document).ready(function(){
-        $(function() {
-            $( "#min" ).datepicker();
-        });
-		 
-        $(function() {
-            $( "#max" ).datepicker();
-        });
-        
-        var oTable=$('#example').dataTable();
-                
-        /* Add event listeners to the two date-range filtering inputs */
-				
-	$('#min').change( function() { oTable.fnDraw(); } );
-        $('#max').change( function() { oTable.fnDraw(); } );
-    });
+	$(document).ready(function(){
+	        $(function() {
+	            $( "#min" ).datepicker();
+	        });
+			 
+	        $(function() {
+	            $( "#max" ).datepicker();
+	        });
+	        
+	        var oTable=$('#example').dataTable();
+	                
+	        /* Add event listeners to the two date-range filtering inputs */
+					
+		$('#min').change( function() { oTable.fnDraw(); } );
+	        $('#max').change( function() { oTable.fnDraw(); } );
+    	});
     
     '#min' and '#max' represent the two date-range pickers which will create the date-range to filter the table on.
     
