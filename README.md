@@ -6,3 +6,30 @@ This script can be used along with Datatables jQuery plug-in to filter any date 
 Overview:
 
 This function can be used to filter any datatables column with date values. You can select the range by using two date-pickers to get the min and max values. You might have to change the function a bit to make it work for different date formats. By default, the function will filter the third datatables column(index=2)which has date in format mm/dd/yyyy
+
+
+Usage:
+
+A basic example to show the usage of this function:
+
+
+$(document).ready(function(){
+        $(function() {
+            $( "#min" ).datepicker();
+        });
+		 
+        $(function() {
+            $( "#max" ).datepicker();
+        });
+        
+        var oTable=$('#example').dataTable();
+                
+        /* Add event listeners to the two date-range filtering inputs */
+				
+	$('#min').change( function() { oTable.fnDraw(); } );
+        $('#max').change( function() { oTable.fnDraw(); } );
+    });
+    
+    '#min' and '#max' represent the two date-range pickers which will create the date-range to filter the table on.
+    
+    By adding "change" event listeners to the two date-range pickers we are redrawing the datatable to show the filtered results everytime the dates in the date-ranger pickes change 
