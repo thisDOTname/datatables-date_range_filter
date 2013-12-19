@@ -3,12 +3,12 @@ dt-date_range_filter
 
 This script can be used along with Datatables jQuery plug-in to filter any date column based on a date-range
 
-Overview:
+<b>Overview:</b>
 
 This function can be used to filter any datatables column with date values. You can select the range by using two date-pickers to get the min and max values. You might have to change the function a bit to make it work for different date formats. By default, the function will filter the datatable's third column(adata[2])which has date in format mm/dd/yyyy
 
 
-Usage:
+<b>Usage:</b>
 
 A basic example to show the usage of this function:
 
@@ -37,7 +37,7 @@ A basic example to show the usage of this function:
 By adding "change" event listeners to the two date-range pickers we are redrawing the datatable to show the filtered results everytime the dates in the date-ranger pickes change 
 
 
-Further Customization for different date formats:
+<b>Further Customization for different date formats:</b>
 
 In the daterangefilter.js, 
 
