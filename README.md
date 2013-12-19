@@ -35,3 +35,12 @@ A basic example to show the usage of this function:
 '#min' and '#max' represent the two date-range pickers which will create the date-range to filter the table on.
     
 By adding "change" event listeners to the two date-range pickers we are redrawing the datatable to show the filtered results everytime the dates in the date-ranger pickes change 
+
+
+Further Customization for different date formats:
+
+In the daterangefilter.js, 
+
+i)  lines 13,14 & 15 are used to set the date separators for the date ranges and the column data.
+
+ii) In lines 17, 18 and 19, we are creating timestamps for all dates. The default date-format is (mm/dd/yyyy). Depending upon the date format, you might need to change the order of parameters in the Date() function. 
