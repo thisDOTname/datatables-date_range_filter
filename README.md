@@ -41,6 +41,6 @@ By adding "change" event listeners to the two date-range pickers we are redrawin
 
 In the daterangefilter.js, 
 
-i)  lines 13,14 & 15 are used to set the date separators for the date ranges and the column data.
+i)  lines 28,29 and 30 are used to set the date separators for the date ranges and the column data.
 
-ii) In lines 17, 18 and 19, we are creating timestamps for all dates. The default date-format is (mm/dd/yyyy). Depending upon the date format, you might need to change the order of parameters in the Date() function. 
+ii) In lines 32, 33 and 34, we are creating timestamps for all dates. The default date-format is (mm/dd/yyyy). Depending upon the date format, you might need to change the order of parameters in the Date() function. 
