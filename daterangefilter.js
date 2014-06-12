@@ -7,7 +7,7 @@
 					}
 					var iMax_temp = $('#max').val();
 					if (iMax_temp == '') {
-					  iMin_temp = '01/01/2014';
+					  iMax_temp = '01/01/2014';
 					}
 					
 					var arr_min = iMin_temp.split("/");
