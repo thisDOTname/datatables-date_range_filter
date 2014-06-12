@@ -1,13 +1,28 @@
 			$.fn.dataTableExt.afnFiltering.push(
 				function( oSettings, aData, iDataIndex ) {
+					
+					var today = new Date();
+					var dd = today.getDate();
+					var mm = today.getMonth() + 1;
+					var yyyy = today.getFullYear();
+					
+					if (dd<10)
+					dd = '0'+dd;
+					
+					if (mm<10)
+					mm = '0'+mm;
+					
+					today = mm+'/'+dd+'/'+yyyy;
+					
 					if ($('#min').val() != '' || $('#max').val() != '') {
 					var iMin_temp = $('#min').val();
 					if (iMin_temp == '') {
 					  iMin_temp = '01/01/1980';
 					}
+					
 					var iMax_temp = $('#max').val();
 					if (iMax_temp == '') {
-					  iMax_temp = '01/01/2014';
+					  iMax_temp = today;
 					}
 					
 					var arr_min = iMin_temp.split("/");
